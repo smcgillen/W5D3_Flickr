@@ -1,0 +1,10 @@
+%h1 flickr
+%div
+  = text_field_tag 'search', nil, :autofocus => true
+  = button_tag 'search flickr', :id => 'flickr'
+  = text_field_tag 'width', 150,:placeholder => 'width'
+  = text_field_tag 'height', 150, :placeholder => 'height'
+  = text_field_tag 'delay', 1, :placeholder => 'delay in (seconds)'
+  = button_tag 'clear photos', :id => 'clear'
+
+#images
